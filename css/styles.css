@@ -1,0 +1,108 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #150e80; /* Cor verde para o cabeçalho */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header img {
+    max-width: 150px;
+    margin-bottom: 0.5rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    border-bottom: 2px solid #4CAF50; /* Linha verde abaixo dos títulos */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+}
+
+footer {
+    background-color: #4CAF50; /* Cor verde para o rodapé */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative; /* Mudado para evitar problemas de posicionamento */
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    
+    header img {
+        max-width: 120px; /* Reduz o tamanho da imagem no cabeçalho em telas menores */
+    }
+
+    iframe {
+        height: 300px; /* Ajusta a altura do mapa em telas menores */
+    }
+}
+.produtos-destaque {
+    text-align:center;
+    justify-content: space-between;
+}
+.produtos-destaque img {
+    width: 350px;
+}
